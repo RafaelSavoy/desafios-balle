@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&family=Roboto+Mono&display=swap");
+
+body {
+  background-color: #2f2325;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 10px;
+  padding: 10px;
+  /* From https://css.glass */
+  background: rgba(184, 176, 176, 0.2);
+  border-radius: 10px;
+  margin: auto;
+  display: none;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: 1px solid #bb7567;
+  color: #dc8e2f;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+	margin-top: 20px;
+	background-color: #BB7567;
+	color: white;
+}
+
+label {
+  color: white;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+h1{
+	color: #97D3DA;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 25px;
+	text-align: justify;
+}
