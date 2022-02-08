@@ -1,4 +1,4 @@
-const form = document.getElementsByClassName("form")[0];
+const form = document.getElementById('form-desafio1')
 
 form.onsubmit = (e) => {
   e.preventDefault();
@@ -10,7 +10,7 @@ form.onsubmit = (e) => {
   document.location.reload();
 };
 
-window.onload = () => {
+function generatePage() {
   const userInfo =
     localStorage.getItem("userInfo") == null
       ? false
@@ -19,6 +19,7 @@ window.onload = () => {
   if (userInfo != false) {
     const h1 = document.createElement("h1");
     const input = document.createElement("input");
+    const conteudo = document.getElementById("desafio1__conteudo")
     h1.innerHTML = `Olá ${userInfo.name}, você tem ${userInfo.idade} anos e já esta aprendendo ${userInfo.linguagens}`;
     input.setAttribute("type", "submit");
     input.value = "Refazer formulário";
@@ -28,9 +29,12 @@ window.onload = () => {
       document.location.reload();
     });
 
-    document.body.appendChild(h1);
-    document.body.appendChild(input);
+    conteudo.appendChild(h1)
+    conteudo.appendChild(input);
+    console.log("A");
   } else {
     form.style.display = "flex";
   }
-};
+}
+
+document.onload = generatePage();
