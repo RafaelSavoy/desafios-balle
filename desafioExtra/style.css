@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat&family=Open+Sans:wght@500&family=Roboto+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #2f2325;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden
+}
+
+.container {
+  background: rgba(184, 176, 176, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  border: 2px solid #9a7171;
+}
+.container__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+.container__formulario{
+  border-right: 1px solid #9a7171;
+
+}
+.container__resultado{
+  border-left: 1px solid #9a7171;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: 1px solid #bb7567;
+  color: #dc8e2f;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #bb7567;
+  color: white;
+}
+
+label {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.section__title {
+  color: #97d3da;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+}
+
+.header__item {
+  margin: 5px;
+}
+.header__title {
+  color: #fff2e7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #97d3da;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+ul{
+  list-style: none;
+}
+
+.userInfo{
+  font-size: 2.3rem;
+  font-family: 'Concert One';
+  color: #E8DBD1;
+}
+.userInfo--info{
+  color: #F2C166;
+  font-size: 2.3rem;
+  font-family: 'Concert One';
+}
+.resultado__item{
+  margin: 15px;
+}
+#resultado{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+}

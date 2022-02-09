@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main class="container">
+      <section class="container__section container__formulario">
+        <h1 class="section__title">Insira os dados do usuário</h1>
+        <form class="form" id="form">
+          <label for="">Nome</label>
+          <input id="nome" type="text" required autocomplete="off" />
+          <label for="">Idade</label>
+          <input id="idade" type="number" required autocomplete="off" />
+          <label for="habilidades">Skills</label>
+          <input
+            id="habilidades"
+            type="text"
+            maxlength="50"
+            required
+            autocomplete="off"
+          />
+          <input type="submit" value="Adicionar" />
+        </form>
+      </section>
+      <section class="container__section container__resultado">
+        <h1 class="section__title">Resultado</h1>
+        <ul id="resultado"></ul>
+      </section>
+    </main>
+  </body>
+  <script src="../header.js"></script>
+  <script src="script.js"></script>
+</html>

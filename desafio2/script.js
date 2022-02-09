@@ -1,27 +1,31 @@
 function calcularMoedas(valor) {
-  let valorNumero = parseFloat(valor)
-  if(valorNumero == 'NaN'){
-    alert('Insira um número válido')
-    return
+  alert(valor);
+  if (isNaN(valor)) {
+    alert("Insira um número válido");
+    return [];
   }
   const moedas = [1, 0.5, 0.05];
   let moedasRecebidas = 0;
 
-  moedas.forEach((moeda) => {
-    console.log(
-      `${parseInt(valor / moeda)} de R$${moeda.toFixed(2)} ${
-        moeda < 1 ? "Centavos" : "Real"
-      }`
-    );
+  let resultado = "";
+
+  moedas.forEach((moeda, index) => {
+    resultado += `<p>${parseInt(valor / moeda)} moedas de R$${moeda.toFixed(
+      2
+    )} ${moeda < 1 ? "Centavos" : "Real"} </p>`;
 
     moedasRecebidas += parseInt(valor / moeda);
 
     valor = valor % moeda;
   });
 
-  console.log(
-    `A quantidade mínima de moedas a serem recebidas como troco são ${moedasRecebidas}`
-  );
-}
+  resultado += `A quantidade mínima de moedas a serem recebidas como troco são ${moedasRecebidas}`;
 
-window.onload = calcularMoedas(44.06)
+  document.getElementById("resultado").innerHTML = resultado;
+}
+const number = document.getElementById("number");
+
+document.querySelector("form").onsubmit = (e) => {
+  e.preventDefault();
+  calcularMoedas(number.value.replace(/,/g, "."));
+};

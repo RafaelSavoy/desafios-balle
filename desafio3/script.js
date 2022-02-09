@@ -1,12 +1,18 @@
-const string =
-  "	Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi officia atque voluptas nostrum laborum et dolorum delectus temporibus molestiae. Vitae atque doloremque hic quidem sed ratione ipsa consectetur modi eos.";
+document.getElementsByClassName("form")[0].addEventListener("submit", (e) => {
+  e.preventDefault();
 
-const palavras = string.split(" ").length
-let partes = string.split(".").length
-const letras = string.length;
+  const string = document.getElementById("frases").value;
 
-console.log(
-  `Este parágrafo tem ${letras} letras, ${palavras} palavras, ${partes} frases`
-);
+  const palavras = string.split(" ")
+  const palavrasSemEspaco = palavras.filter(e => {
+    return e != ''
+  })
 
-<script src="desafio3/script.js"></script>
+  let partes = string.split(".").length;
+  const letras = string;
+  const letrasSemEspacos = letras.replace(" ", "");
+
+  document.getElementById(
+    "resultado"
+  ).innerHTML = `Este parágrafo tem ${letrasSemEspacos.length} letras, ${palavrasSemEspaco.length} palavras, ${partes} frases`;
+});
