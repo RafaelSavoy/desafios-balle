@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@500&family=Roboto+Mono&display=swap");
-*{
+* {
   margin: 0;
   padding: 0;
 }
-html{
-  font-size: 62.5%
+html {
+  font-size: 62.5%;
 }
 body {
   background-color: #2f2325;
@@ -23,7 +23,7 @@ body {
   border-radius: 10px;
   margin: auto;
 }
-#form-desafio1{
+#form-desafio1 {
   display: none;
 }
 
@@ -36,36 +36,36 @@ input {
   padding: 5px;
 }
 
-input[type="submit"]{
-	cursor: pointer;
-	margin-top: 20px;
-	background-color: #BB7567;
-	color: white;
+input[type="submit"] {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #bb7567;
+  color: white;
 }
 
 label {
   color: white;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
 }
 
-h1{
-	color: #97D3DA;
-	font-family: 'Montserrat',sans-serif;
-	font-size: 2.5rem; 
+h1 {
+  color: #97d3da;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
 }
-#desafio1__conteudo{
+#desafio1__conteudo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-#conteudo{
+#conteudo {
   margin: 0 auto;
 }
 
-header{
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,35 +74,44 @@ header{
   margin: 20px 0px 20px 0px;
 }
 
-.header__list{
+.header__list {
   display: flex;
   list-style: none;
 }
 
-.header__item{
+.header__item {
   margin: 5px;
-  
 }
 
-.header__link{
+.header__link {
   text-decoration: none;
-  color: #97D3DA;
-  font-family: 'Montserrat',sans-serif;
+  color: #97d3da;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
 }
-.header__title{
-  color: #FFF2E7;
-  font-size: 3rem;  
+.header__title {
+  color: #fff2e7;
+  font-size: 3rem;
 }
-.index__nav{
+.index__nav {
   margin: auto;
 }
+#desafio1__userInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(184, 176, 176, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+}
+.desafio1__user {
+  text-align: center;
+  color: #ffffff;
+}
 
-
-
-#resultado{
+#resultado {
   color: white;
   font-size: 1rem;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 5px;
 }

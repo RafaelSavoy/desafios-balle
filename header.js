@@ -1,6 +1,5 @@
-window.onload = () => {
-  const header = document.querySelector("header");
-  header.innerHTML = `
+const header = document.querySelector("header");
+header.innerHTML = `
   <h1 class="header__title">Desafios Comunidade Ballerini</h1>
   <nav class="header__nav">
 	  <ul class="header__list">
@@ -11,4 +10,3 @@ window.onload = () => {
 	  </ul>
   </nav>
 `;
-};
