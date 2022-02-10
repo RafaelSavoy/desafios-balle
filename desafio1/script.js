@@ -4,7 +4,7 @@ form.onsubmit = (e) => {
   e.preventDefault();
   const name = document.getElementById("nome").value;
   const idade = document.getElementById("idade").value;
-  const linguagens = document.getElementById("linguagem");
+  const linguagens = document.getElementById("linguagem").value;
 
   localStorage.setItem("userInfo", JSON.stringify({ name, idade, linguagens }));
   document.location.reload();
