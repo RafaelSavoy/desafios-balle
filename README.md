@@ -2,6 +2,6 @@
 
 Link da comunidade https://discord.gg/ballerini
 
-## Desafio 1
+## Desafios
 
-[foto](desafio1.png)
+[Site](https://desafios-balle.vercel.app/)
