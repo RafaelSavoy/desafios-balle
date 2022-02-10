@@ -11,7 +11,7 @@ form.onsubmit = (e) => {
 };
 
 window.onload = () => {
-  const divUserinfo = document.getElementById('desafio1__userInfo')
+  const divUserinfo = document.getElementById("desafio1__userInfo");
   const userInfo =
     localStorage.getItem("userInfo") == null
       ? false
@@ -20,9 +20,11 @@ window.onload = () => {
   if (userInfo != false) {
     const h1 = document.createElement("h1");
     const input = document.createElement("input");
+
     h1.innerHTML = `Olá ${userInfo.name}, você tem ${userInfo.idade} anos e já esta aprendendo ${userInfo.linguagens}`;
-	h1.classList.add('desafio1__user')
-    input.setAttribute("type", "submit");
+    h1.classList.add("desafio1__user");
+
+    input.type = 'submit'
     input.value = "Refazer formulário";
 
     input.addEventListener("click", () => {
@@ -32,7 +34,9 @@ window.onload = () => {
 
     divUserinfo.appendChild(h1);
     divUserinfo.appendChild(input);
+    divUserinfo.style.display = 'flex'
+
   } else {
-    form.style.display = "flex";
+    form.style.display = 'flex';
   }
 };
