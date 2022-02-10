@@ -10,9 +10,7 @@ function calcularMoedas(valor) {
   let resultado = "";
 
   moedas.forEach((moeda, index) => {
-    resultado += `<p>${parseInt(valor / moeda)} moedas de R$${moeda.toFixed(
-      2
-    )} ${moeda < 1 ? "Centavos" : "Real"} </p>`;
+    resultado += `<p>${parseInt(valor / moeda)} moedas de R$${moeda.toFixed(2)} ${moeda < 1 ? "Centavos" : "Real"} </p>`;
 
     moedasRecebidas += parseInt(valor / moeda);
 
