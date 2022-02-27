@@ -1,4 +1,4 @@
-# Desafios comunidade Ballerini
+# Desafios JS comunidade Ballerini
 
 Link da comunidade https://discord.gg/ballerini
 
