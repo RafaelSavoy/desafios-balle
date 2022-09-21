@@ -4,4 +4,4 @@ Link da comunidade https://discord.gg/ballerini
 
 ## Desafios
 
-[Site](https://desafios-balle.vercel.app/)
+[Site](https://rafaelsavoy.github.io/desafios-js-comunidade-ballerini/)
